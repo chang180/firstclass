@@ -8,7 +8,7 @@
 <body>
     
 
-<php?
+<?php
 //萬年曆程式 
 //date計算 
 $ctime = "+0"; //時差換算 
@@ -109,7 +109,7 @@ if($days[$i] == $day)
 echo "<td><a href='index.php?newyear=$year&newmon=$mon&newday=$days[$i]'><font face='sans-serif' size='2' color='red'>{$days[$i]}</font></a></td>"; 
 else
 echo "<td><a href='index.php?newyear=$year&newmon=$mon&newday=$days[$i]'><font face='sans-serif' size='2'>{$days[$i]}</font></a></td>"; 
-} <br />
+} "<br />";
 echo "</tr><tr align='center'>";
 for($i=29;$i<=35;$i++){
 if($days[$i] == $day)
