@@ -10,4 +10,7 @@ $a=2.1;
 echo $a."<br>";
 print($a)."<br>";
 
+$studentInSchool=true;
+
+
 ?>
