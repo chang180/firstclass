@@ -13,22 +13,37 @@ $cc;
 define("PI",3.14);
 echo PI."<br>";
 
-echo M_PI."<br>"; //這是定值，比較快
-echo pi()."<br>"; //這是函數，慢一點點
-
-$a=1;
-$a=2.1;
+$a=true;
 echo $a."<br>";
-print($a)."<br>";
+echo !$a."<br>";
 
-$studentInSchool=true;
-
-
-$c=-1;
-if($c) echo "true";
-else echo "false";
+// 直譯式語言，運算子會有先後順序，須注意控制效果
+$b=1;
+echo $b++."<br>";
+echo ++$b."<br>";
+echo $b."<br>";
 echo "<br>";
-if(false==false) echo "true";
-else echo "false";
+
+
+
+// 抄一個太空船運算符參考一下
+// 整型比较
+print( 1 <=> 1);print(PHP_EOL."<br>");
+print( 1 <=> 2);print(PHP_EOL."<br>");
+print( 2 <=> 1);print(PHP_EOL."<br>");
+print(PHP_EOL); // PHP_EOL."<br>" 为换行符
+
+// 浮点型比较
+print( 1.5 <=> 1.5);print(PHP_EOL."<br>");
+print( 1.5 <=> 2.5);print(PHP_EOL."<br>");
+print( 2.5 <=> 1.5);print(PHP_EOL."<br>");
+print(PHP_EOL);
+
+// 字符串比较
+print( "a" <=> "a");print(PHP_EOL."<br>");
+print( "a" <=> "b");print(PHP_EOL."<br>");
+print( "b" <=> "a");print(PHP_EOL."<br>");
+
+
 
 ?>
