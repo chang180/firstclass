@@ -12,6 +12,9 @@ $cc;
 // <!-- 增加一行註解，測試git版本更新的功能 -->
 define("PI",3.14);
 echo PI."<br>";
+echo pi()."<br>";
+echo M_PI."<br>"; //M_PI為常數，執行效率比pi()快
+
 
 $a=true;
 echo $a."<br>";
