@@ -8,7 +8,7 @@ $cc;
 <h1>hello world</h1>
 
 
-
+<?php
 <!-- 增加一行註解，測試git版本更新的功能 -->
 define("PI",3.14);
 echo PI."<br>";
